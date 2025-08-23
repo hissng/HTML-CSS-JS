@@ -1,0 +1,56 @@
+
+body, div {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  
+}
+
+table, tr, th, td {
+  border: solid black;
+  border-width: thin;  
+}
+
+
+.product-img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.brand-img {
+  width: 40px;
+}
+
+.no-margin-text {
+  margin: 0;
+}
+
+.width-80 {
+  width: 80px;
+}
+
+.main-raw {
+  height: 80px;
+}
+
+.bottom-col {
+  height: 60px;
+  text-align: right;
+  
+}
+
+.container {
+  background-color: lightsteelblue;
+  padding: 60px;
+}
+
+.main-table {
+  width: 100%;
+  background-color: white;
+}
