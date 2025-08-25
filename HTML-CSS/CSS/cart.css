@@ -1,7 +1,16 @@
+/*
+.edu-nsw-act-cursive-abc {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+*/
 
 body, div {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Edu NSW ACT Cursive";
 }
 
 table {
@@ -12,6 +21,11 @@ table {
 table, tr, th, td {
   border: solid black;
   border-width: thin;  
+}
+
+td:nth-child(5) {
+  color: navy;
+  font-weight: 1000;
 }
 
 
@@ -53,4 +67,61 @@ table, tr, th, td {
 .main-table {
   width: 100%;
   background-color: white;
+}
+
+.purchase-btn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.purchase-btn:hover {
+  background-color: chocolate;
+}
+.purchase-btn:active {
+  background-color: brown;
+}
+.purchase-btn:focus {
+  background-color: aqua;
+}
+
+
+
+.input-test {
+  font-size: 25px;
+  
+}
+.input-test:focus {
+  /*background-color: gray;*/
+  box-shadow: inset 0 0 10px #666;
+}
+
+.custom-link {
+  text-decoration: none;
+  
+}
+.custom-link:link {
+  color: violet;
+}
+
+.custom-link:visited {
+  color: black;
+}
+
+.flex-item {
+  width: 100px;
+  height: 59px;
+  background-color: hotpink;
+  text-align: center;
+  align-content: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+}
 }
