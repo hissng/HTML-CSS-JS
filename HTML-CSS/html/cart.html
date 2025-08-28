@@ -1,71 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Title</title>
-    <link href="../CSS/cart.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
-      rel="stylesheet" />
-  </head>
-  <body>
-    <div class="flex-container">
-      <div class="flex-item">Logo</div>
-      <div class="flex-item" style="flex-grow: 1"></div>
-      <div class="flex-item">products</div>
-      <div class="flex-item">services</div>
-    </div>
-    <div class="container">
-      <table class="main-table">
-        <thead>
-          <tr>
-            <td colspan="5" style="text-align: left">Your shopping cart</td>
-          </tr>
-          <!--왜 h, p태그 못씀?-->
-        </thead>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <link href="../CSS/cart.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="container">
+        <h4 class="table-title">Your shopping cart</h4>
+        <div style="border-radius: 5px"> <!-- 표 외곽 둥글게하기 위한 꼼수-->
+          <table class="main-table">
+            <thead>
+              <tr>
+                <th colspan="2" class="text-center">ITEM</th>
+                <!--<td></td>-->
+                <th class="width-80">AMOUNT</th>
+                <th class="width-80">PRICE</th>
+                <th class="width-80">TOTAL</th>
+              </tr>   
+              <!--왜 h, p태그 못씀? thead에는 뭘 넣음?-->
+            </thead>
 
-        <tbody>
-          <tr>
-            <th colspan="2" class="text-center">ITEM</th>
-            <!--<td></td>-->
-            <th class="width-80">AMOUNT</th>
-            <th class="width-80">PRICE</th>
-            <th class="width-80">TOTAL</th>
-          </tr>
-          <tr class="main-raw">
-            <td class="width-80">
-              <img src="../img/sony_cam_1.PNG" class="product-img" />
-            </td>
-            <td>
-              <img src="../img/sony_logo.png" class="brand-img" />
-              <p class="no-margin-text">FE 70-200 mm F2.8 GM OSS</p>
-            </td>
-            <td>1</td>
-            <td>€ 1979.00</td>
-            <td>€ 1979.00</td>
-          </tr>
-          <tr class="main-raw">
-            <td class="width-80">
-              <img src="../img/sony_cam_2.PNG" class="product-img" />
-            </td>
-            <td>
-              <img src="../img/sony_logo.png" class="brand-img" />
-              <p class="no-margin-text">Sonnar T' E 24mm F1.8 ZA</p>
-            </td>
-            <td>1</td>
-            <td>€ 989.00</td>
-            <td>€ 989.00</td>
-          </tr>
-          <tr>
-            <td colspan="5" class="bottom-col">€ 2968.00</td>
-          </tr>
-        </tbody>
-      </table>
-      <button class="purchase-btn">구매하기</button>
-      <input class="input-test" />
-      <a href="#" class="custom-link">링크</a>
-    </div>
-  </body>
+            <tbody>
+              <tr class="main-raw">
+                <td class="width-80">
+                  <img src="../img/sony_cam_1.PNG" class="product-img">
+
+                </td>
+                <td>
+                  <img src="../img/sony_logo.png" class="brand-img">
+                  <p class="no-margin-text">FE 70-200 mm F2.8 GM OSS</p>
+                </td>
+                <td>1</td>
+                <td>€ 1979.00</td>
+                <td>€ 1979.00</td>
+              </tr>
+              <tr class="main-raw">
+                <td class="width-80">
+                  <img src="../img/sony_cam_2.PNG" class="product-img">
+
+                </td>
+                <td>
+                  <img src="../img/sony_logo.png" class="brand-img">
+                  <p class="no-margin-text">Sonnar T' E 24mm F1.8 ZA</p>
+                </td>
+                <td>1</td>
+                <td>€ 989.00</td>
+                <td class="total-text">€ 989.00</td>
+              </tr>
+              <tr>
+                <td colspan="5" class="bottom-col">
+                  € 2968.00
+                </td>
+              </tr>
+
+
+
+            </tbody>
+
+
+        </table>
+      </div>
+        <a href="#" style="margin-top: 10px">Edit your shopping cart</a>
+        <input type="submit" class="payment-button" value="Choose payment method">
+      
+      </div>
+      
+  
+  
+  
+    </body>
 </html>

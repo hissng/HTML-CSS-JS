@@ -1,0 +1,146 @@
+body,
+div {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.large-text {
+  font-size: 30px;
+}
+
+.middle-text {
+  font-size: 20px;
+  margin: 0;
+}
+
+.small-text {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 10px;
+}
+.top-textbox {
+  width: 50%;
+  color: white;
+}
+
+.main-top-box {
+  position: relative;
+  padding: 5%;
+  background-image: linear-gradient(dodgerblue, slateblue);
+  height: 400px;
+}
+
+.phone-img {
+  position: absolute;
+  width: 250px;
+  bottom: 0;
+  right: 5%;
+}
+
+.middle-portfolio-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
+
+.button-standard {
+  margin-top: 20px;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #333333;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+
+.main-description-box {
+  padding: 2%;
+  background-color: slateblue;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+
+.service-box-container {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.service-box {
+  float: left;
+  text-align: center;
+  padding: 1%;
+  width: 25%;
+}
+
+.service-box h4,
+.service-box p {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.service-img-box {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  margin: auto;
+  background-color: white;
+  color: slateblue;
+  border-radius: 100px;
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 768px) {
+  .main-top-box {
+    height: 450px;
+  }
+
+  .top-textbox {
+    width: 100%;
+    text-align: center;
+  }
+  .top-textbox h3 {
+    font-size: 25px;
+  }
+
+  .top-textbox p {
+    font-size: 13px;
+  }
+  .phone-img {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px; /* 반드시 width, height를 지정해야 합니다. */
+  }
+  .service-box {
+    width: 50%;
+  }
+
+  .main-description-box {
+    height: 470px;
+  }
+}
+
+.portfolio-img {
+  width: 100%;
+}
+
+.anim-box {
+  width: 50%;
+  overflow: hidden;
+}
+
+.main-anim-box {
+  padding: 5%;
+}
