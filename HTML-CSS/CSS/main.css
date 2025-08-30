@@ -173,13 +173,13 @@ input[type="text"] {
 }
 
 /* product-img-box에 마우스를 올렸을 때, 그 자식 요소인 black-box에 스타일을 적용 */
-.product-img-box:hover > .black-box {
+.product-img-box:hover .black-box {
   transition: all 1s;
   bottom: 49px;
 }
 
-/* product-img-box에서 마우스가 벗어났을 때, 그 자식 요소인 black-box에 스타일을 적용 */
-.product-img-box:not(:hover) > .black-box {
+ /*product-img-box에서 마우스가 벗어났을 때, 그 자식 요소인 black-box에 스타일을 적용 */
+.product-img-box:not(:hover) .black-box {
   transition: all 1s;
   bottom: 0;
 }
@@ -194,6 +194,8 @@ input[type="text"] {
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
   bottom: 0;
+  /*left: ;*/
+  /*top: 10px;*/
   padding: 4px;
 }
 
