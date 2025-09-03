@@ -51,22 +51,24 @@ div {
 .right-box-titles {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 120px;
   
 }
 
 .right-box-contents {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .summary-right-box {
   display: flex;
   padding: 25px;
+  padding-right: 0;
 }
 
 .col-line {
-  border-left: solid #ececec;
+  border-left: thin solid #ececec;
   margin: 0;
   width: 0;
   padding: 0;
@@ -79,4 +81,22 @@ div {
 
 .right-box-title {
   margin-top: 25px;
+}
+
+.profile-underlined {
+  color: #6fbaf8;
+}
+
+.works-box {
+  background-color: white;
+}
+
+.about-skill-wrap {
+  background-color: white;
+}
+
+.skills-box {
+  border-top: thin solid #ececec;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
