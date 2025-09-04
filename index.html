@@ -1,108 +1,129 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
-    <link href="CSS/landingpage.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
     <link href="fontawesome7/css/all.min.css" rel="stylesheet" />
+    <link href="CSS/profile.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="container">
-      <div class="main-top-box">
-        <div class="top-textbox">
-          <h3 class="large-text" style="margin-top: 0">Landing Page for Apps</h3>
-          <p class="small-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-          <button class="button-standard">Show More</button>
+  <body style="background-color: #f7f9fc">
+    <div class="container profile-container">
+      <div class="summary-box m-1 row shadow-sm">
+        <div class="summary-left-box col-md-7">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <img src="img/%EA%B9%9C%EB%AA%BD%EC%9D%B4.jpg" class="profile-img" />
+            </div>
+            <div class="flex-grow-1 ms-4">
+              <h3 class="m-0 fs-2 fw-bold">Kulvee</h3>
+              <p class="m-0 small">Front-end Designer</p>
+              <div class="summary-location-box">
+                <i class="fa-solid fa-location-dot small location-icon"></i>
+                <p class="m-0 small">산성가음로 711-9</p>
+              </div>
+              <button class="btn btn-primary contact-btn" type="submit">Contact</button>
+            </div>
+          </div>
         </div>
-        <img src="img/iphone-1.png" class="phone-img" />
-      </div>
-      <div style="clear: both"></div>
-      <div class="middle-portfolio-box">
-        <h3 class="middle-text">It is the perfect theme for your next Project!</h3>
-        <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="button-standard">Show Portfolio</button>
-      </div>
-      <div class="main-description-box">
-        <span class="small-text">services</span>
-        <h3 class="middle-text">What We Offer</h3>
-        <div class="service-box-container">
-          <div class="service-box">
-            <div class="service-img-box">
-              <i class="fa-solid fa-phone-volume fa-2x"></i>
-            </div>
-            <h4 style="font-size: 18px">Responsive</h4>
-            <p class="small-text">Lorem ipsum dolor sit amet</p>
+        <div class="col-line col-md-1"></div>
+        <div class="summary-right-box col-md-4">
+          <div class="right-box-titles fw-bold">
+            <span class="mt-2 mb-2">Location</span>
+            <span class="mt-2 mb-2">Age</span>
+            <span class="mt-2 mb-2">Experience</span>
+            <span class="mt-2 mb-2">School</span>
           </div>
-          <div class="service-box">
-            <div class="service-img-box">
-              <i class="fa-solid fa-flask fa-2x"></i>
-            </div>
-            <h4 style="font-size: 18px">Experiments</h4>
-            <p class="small-text">Lorem ipsum dolor sit amet</p>
-          </div>
-          <div class="service-box">
-            <div class="service-img-box">
-              <i class="fa-solid fa-bolt fa-2x"></i>
-            </div>
-            <h4 style="font-size: 18px">Quickness</h4>
-            <p class="small-text">Lorem ipsum dolor sit amet</p>
-          </div>
-          <div class="service-box">
-            <div class="service-img-box">
-              <i class="fa-solid fa-ship fa-2x"></i>
-            </div>
-            <h4 style="font-size: 18px">Global Shipping</h4>
-            <p class="small-text">Lorem ipsum dolor sit amet</p>
+          <div class="right-box-contents">
+            <span class="mt-2 mb-2">산성가음로 711-9</span>
+            <span class="mt-2 mb-2">98년생</span>
+            <span class="mt-2 mb-2">신입</span>
+            <span class="mt-2 mb-2">애플대학교</span>
           </div>
         </div>
       </div>
-      <div class="main-bottom-box">
-        <span class="small-text">portfolio</span>
-        <h3 class="middle-text">What we can DO</h3>
-        <div class="main-anim-box">
-          <div class="portfolio-box">
-            <div class="white-border"></div>
-            <h4 class="middle-text portfolio-text-title">Stationary</h4>
-            <p class="small-text portfolio-text-content">Lorem ipsum dolor sit amet</p>
-            <img src="img/portfolio-1-1.jpg" class="portfolio-img" />
+      <div class="m-1 profile-bar">
+        <div class="profile-underlined fw-bold">Profile</div>
+        <div class="empty-underlined"></div>
+      </div>
+      <div class="main-detail-box m-0 flex-md-row">
+        <div class="works-box m-2 p-4 shadow-sm">
+          <h4 class="fs-3">WORKS</h4>
+          <p class="m-0">Landing page design</p>
+          <p class="m-0">Flyer design</p>
+          <p class="m-0">Vue.js To-do app</p>
+          <p class="m-0">Shopping page design</p>
+        </div>
+        <div class="about-skill-wrap m-2 p-4 shadow-sm">
+          <div class="about-box pb-md-5">
+            <h4 class="fs-3">ABOUT</h4>
+            <p class="small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
           </div>
-          <div class="portfolio-box">
-            <div class="white-border"></div>
-            <h4 class="middle-text portfolio-text-title">Stationary</h4>
-            <p class="small-text portfolio-text-content">Lorem ipsum dolor sit amet</p>
-            <img src="img/portfolio-2.jpg" class="portfolio-img" />
+          <div class="top-gray-line-box">
+            <h4 class="fs-3">SKILLS</h4>
+            <span class="badge text-bg-light border">HTML5</span>
+            <span class="badge text-bg-light border">CSS3</span>
+            <span class="badge text-bg-light border">JavaScript</span>
+            <span class="badge text-bg-light border">Photoshop</span>
           </div>
-          <div class="portfolio-box">
-            <div class="white-border"></div>
-            <h4 class="middle-text portfolio-text-title">Stationary</h4>
-            <p class="small-text portfolio-text-content">Lorem ipsum dolor sit amet</p>
-            <img src="img/portfolio-3-1.jpg" class="portfolio-img" />
+        </div>
+        <div class="sns-pymk-wrap m-2">
+          <div class="sns-box">
+            <div class="card text-center p-3">
+              <div>
+                <i class="fa-brands fa-linkedin fa-5x" style="color: #6fbaf8"></i>
+              </div>
+              <div class="card-body linkedin-box">
+                <h5 class="card-title">Find me at LinkedIn.com</h5>
+                <a href="#" class="btn btn-primary contact-btn mt-2 mb-3">Sign Up</a>
+                <a href="#" class="already-member-link">Already in Member?</a>
+              </div>
+            </div>
           </div>
-          <div class="portfolio-box">
-            <div class="white-border"></div>
-            <h4 class="middle-text portfolio-text-title">Stationary</h4>
-            <p class="small-text portfolio-text-content">Lorem ipsum dolor sit amet</p>
-            <img src="img/portfolio-4-1.jpg" class="portfolio-img" />
+          <div class="peopleyoumightknow-box mt-2 mb-2 d-none d-md-block">
+            <h4 class="fs-6 fw-bold">People You Might Know</h4>
+            <div class="d-flex top-gray-line-box">
+              <div class="flex-shrink-0">
+                <img src="img/profile-pic.png" class="profile-img" width="60px" />
+              </div>
+              <div class="flex-grow-1 ms-1">
+                <h3 class="m-0 fs-6 fw-bold">Jason Derulo</h3>
+                <p class="m-0 small">Developer</p>
+                <div class="summary-location-box">
+                  <i class="fa-solid fa-location-dot small location-icon"></i>
+                  <p class="m-0 small">Seoul</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex top-gray-line-box">
+              <div class="flex-shrink-0">
+                <img src="img/profile-pic.png" class="profile-img" width="60px" />
+              </div>
+              <div class="flex-grow-1 ms-1">
+                <h3 class="m-0 fs-6 fw-bold">Logan Daul</h3>
+                <p class="m-0 small">Designer</p>
+                <div class="summary-location-box">
+                  <i class="fa-solid fa-location-dot small location-icon"></i>
+                  <p class="m-0 small">Busan</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div style="clear: both"></div>
-      <div class="sub-sns-box">
-        <button class="sns-button">
-          <i class="fa-brands fa-google"></i>
-        </button>
-        <button class="sns-button">
-          <i class="fa-brands fa-twitter"></i>
-        </button>
-        <button class="sns-button">
-          <i class="fa-brands fa-instagram"></i>
-        </button>
-      </div>
-      <div class="footer-box">@kulvee</div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
   </body>
 </html>
