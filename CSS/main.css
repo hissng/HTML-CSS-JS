@@ -206,3 +206,13 @@ input[type="text"] {
   color: white;
   font-size: 14px;
 }
+
+.pseudo::after {
+  content: "신발좀 사주세요 ㅠㅠ";
+  color: red;
+  font-size: 30px;
+}
+
+.input-file::file-selector-button {
+  background-color: aqua;
+}
