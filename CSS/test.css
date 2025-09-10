@@ -1,0 +1,40 @@
+.box {
+  width: 100%;
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  font-size: 32px;
+}
+
+.tremble-btn {
+  padding: 10px;
+  background-color: #86acff;
+  color: white;
+  border: thin;
+}
+.tremble-btn:hover {
+  animation-name: tremble;
+  animation-duration: 0.3s;
+  background-color: #4f74c2;
+}
+
+.rotate-plus-btn {
+  border: none;
+  background-color: white;
+  padding: 0;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+@keyframes tremble {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-10deg);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}/*# sourceMappingURL=test.css.map */

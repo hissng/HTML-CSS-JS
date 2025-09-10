@@ -216,3 +216,30 @@ input[type="text"] {
 .input-file::file-selector-button {
   background-color: aqua;
 }
+
+progress {
+  /*기본 배경은 없애주는게 좋습니다*/
+  appearance: none;
+  height: 
+}
+
+progress::-webkit-progress-value {
+
+  background-color: aqua;
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: 
+
+}
+
+progress::-webkit-progress-bar {
+
+  background-color: black;
+
+}
+
+progress::-webkit-progress-inner-element {
+
+
+}
