@@ -27,6 +27,35 @@ $my-size: $default-size + $abc-size;
   padding: 0;
   font-size: 100px;
   font-weight: bolder;
+  &:hover {
+    animation-name: rotate-zoom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-size: 150px;
+    transition: 1s;
+  }
+}
+
+.black-box {
+  position: relative;
+  width: 500px;
+  height: 1000px;
+  background-color: black;
+  right: 300px;
+  &:hover {
+    right: 0px;
+    transition: 1s;
+  }
+
+  // &:not(:hover) {
+  //   right: 300px;
+  //   transition: 1s;
+  // }
+}
+
+.menu-text,
+.item-text {
+  position: absolute;
 }
 
 @keyframes tremble {
@@ -41,5 +70,30 @@ $my-size: $default-size + $abc-size;
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate-zoom {
+  0% {
+    // transform: scale(1);
+    transform: rotate(0deg);
+  }
+  25% {
+    // transform: scale(1);
+    transform: rotate(-10deg);
+  }
+  // 66% {
+  //   // transform: scale(1.2);
+  //   transform: rotate(20deg);
+  // }
+  100% {
+    // transform: scale(1);
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes menu-moving {
+  0% {
+    float: right;
   }
 }
