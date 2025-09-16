@@ -1,0 +1,41 @@
+@mixin default-dashboard-card($border-color) {
+  width: 250px;
+  height: 125px;
+  margin: 25px;
+  border: solid thin rgb(200, 200, 200);
+  border-radius: 10px;
+  border-left: solid thick $border-color;
+  // box-shadow: 5px 5px 5px gray;
+}
+
+div,
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrap-box {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.nav-name {
+}
+
+.dashboard-box {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-card-mint {
+  @include default-dashboard-card(rgb(32, 206, 177));
+}
+.dashboard-card-green {
+  @include default-dashboard-card(green);
+}
+.dashboard-card-navy {
+  @include default-dashboard-card(rgb(0, 48, 180));
+}
+.dashboard-card-yellow {
+  @include default-dashboard-card(rgb(255, 208, 0));
+}
