@@ -1,11 +1,21 @@
 @mixin default-dashboard-card($border-color) {
-  width: 250px;
+  position: relative;
+  // width: 250px;
+  width: 20%;
   height: 125px;
-  margin: 25px;
+  // margin: 25px;
+  margin: 1%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 10px;
   border: solid thin rgb(220, 220, 220);
   border-radius: 10px;
   border-left: solid thick $border-color;
   // box-shadow: 5px 5px 5px gray;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    align-self: center;
+  }
 }
 
 div,
@@ -19,21 +29,63 @@ body {
 }
 
 .wrap-box {
-  padding: 20px;
+  position: relative;
+  padding-right: 20px;
   padding-left: 60px;
   // padding-right: 50px;
 }
 
-.left-box {
-  width: 300px;
+.focus-longed {
+  transition: 1s;
+  &:focus {
+    width: 500px;
+  }
+}
+
+.left-list-box {
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  width: 50px;
   height: 100%;
-  float: left;
+  padding: 30px;
+  padding-left: 15px;
+  padding-right: 0;
   background-color: slateblue;
+  color: white;
+  justify-content: center;
+  transition: 0.5s;
+  .left-box-text {
+    position: relative;
+    right: 150px;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    width: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .left-box-text {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+
+.nav-menu-button {
+  display: none;
+  padding-top: 10px;
 }
 
 .dashboard-box {
   display: flex;
   justify-content: center;
+}
+
+.dashboard-icon {
+  position: absolute;
+  right: 10px;
+  top: 40px;
 }
 
 .dashboard-card-mint {
@@ -61,6 +113,11 @@ body {
   border-bottom: solid thin rgb(220, 220, 220);
 }
 
+.left-box-menu {
+  display: flex;
+  align-items: center;
+}
+
 .chart-box {
   padding: 25px;
 }
@@ -72,5 +129,26 @@ body {
   border-bottom: solid thin rgb(220, 220, 220);
 }
 
-.task-layout-box {
+@keyframes left-box-text-moving {
+  0% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .focus-longed {
+    transition: 1s;
+    &:focus {
+      width: 300px;
+    }
+  }
+  .nav-right-box {
+    display: none;
+  }
+  .nav-menu-button {
+    display: block;
+  }
 }

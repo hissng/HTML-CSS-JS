@@ -15,12 +15,29 @@
   </head>
   <body>
     <div class="wrap-box bg-body-tertiary row">
-      <div class="left-list-box"></div>
-      <nav class="navbar bg-body-tertiary">
+      <div class="left-list-box">
+        <div class="left-box-menu mb-4">
+          <i class="fa-solid fa-house me-2 fs-5"></i>
+          <span class="left-box-text fs-5">Home</span>
+        </div>
+        <div class="left-box-menu mb-4">
+          <i class="fa-solid fa-headset me-2 fs-5"></i>
+          <span class="left-box-text fs-5">Services</span>
+        </div>
+        <div class="left-box-menu mb-4">
+          <i class="fa-solid fa-bell me-2 fs-5"></i>
+          <span class="left-box-text fs-5">Alert</span>
+        </div>
+        <div class="left-box-menu mb-4">
+          <i class="fa-solid fa-chart-simple me-2 fs-5"></i>
+          <span class="left-box-text fs-5">Stats</span>
+        </div>
+      </div>
+      <nav class="navbar bg-body-tertiary pt-3 pb-3">
         <div class="container-fluid">
           <form class="d-flex" role="search">
             <input
-              class="form-control me-2"
+              class="form-control focus-longed me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
@@ -50,18 +67,37 @@
             </button>
             <span>Kulvee</span>
           </div>
+          <button type="button" class="btn btn-light nav-menu-button">
+            <i class="fa-solid fa-bars fs-2"></i>
+          </button>
         </div>
       </nav>
       <h2 class="fw-bold">Dashboard</h2>
-      <div class="left-box"></div>
+
       <div class="dashboard-box col-md-12 flex-column flex-md-row">
-        <div class="dashboard-card-mint shadow-medium"></div>
-        <div class="dashboard-card-green shadow-medium"></div>
-        <div class="dashboard-card-navy shadow-medium"></div>
-        <div class="dashboard-card-yellow shadow-medium"></div>
+        <div class="dashboard-card-mint shadow-medium pt-3">
+          <h6 class="fs-6">Earnings (Monthly)</h6>
+          <p class="fs-5 fw-bold">$400,000</p>
+          <i class="fa-solid fa-money-check dashboard-icon fs-1"></i>
+        </div>
+        <div class="dashboard-card-green shadow-medium pt-3">
+          <h6 class="fs-6">Earnings (Annual)</h6>
+          <p class="fs-5 fw-bold">$800,000</p>
+          <i class="fa-solid fa-dollar-sign dashboard-icon fs-1"></i>
+        </div>
+        <div class="dashboard-card-navy shadow-medium pt-3">
+          <h6 class="fs-6">Tasks</h6>
+          <p class="fs-5 fw-bold">13</p>
+          <i class="fa-solid fa-list-check dashboard-icon fs-1"></i>
+        </div>
+        <div class="dashboard-card-yellow shadow-medium pt-3">
+          <h6 class="fs-6">Requests</h6>
+          <p class="fs-5 fw-bold">26</p>
+          <i class="fa-solid fa-question dashboard-icon fs-1"></i>
+        </div>
       </div>
       <div class="chart-layout-wrap p-2 col-md-8">
-        <div class="chart-layout-box shadow-medium border-silver">
+        <div class="chart-layout-box shadow-medium border-silver rounded-3">
           <div class="middle-title-box">
             <h4 class="m-0 fw-bold">Earnings Overview</h4>
           </div>
@@ -105,7 +141,7 @@
         </div>
       </div>
       <div class="task-layout-wrap p-2 col-md-4">
-        <div class="task-layout-box shadow-medium border-silver">
+        <div class="task-layout-box shadow-medium border-silver rounded-3">
           <div class="middle-title-box">
             <h4 class="m-0 fw-bold">Tasks</h4>
           </div>
